@@ -23,5 +23,10 @@ namespace MediatRInPractice.Controllers
         {
             return Ok(await _mediator.Send(command));
         }
+        [HttpPut]
+        public async Task<IActionResult> PutAsync(UpdateUser command)
+        {
+            return Ok(await _mediator.Send(command));
+        }
     }
 }
